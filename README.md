@@ -18,3 +18,10 @@ Things that are here:
   config ISO image
 - virt-boot -- wrapper for virt-install to create a snapshot,
   populate a cloud-init compatible config drive, and boot an instance.
+
+To create the config iso, run this:
+./create-config-drive --ssh-key /root/.ssh/id_rsa.pub --user-data ./user-data --hostname <hostname> config.iso
+
+The config.iso can be reused if you remove the cdrom from domain definition. 
+
+
