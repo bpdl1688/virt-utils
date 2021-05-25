@@ -1,3 +1,4 @@
+## File List
 Things that are here:
 
 - virt-addr -- list the ip addresses assigned to a domain by scanning
@@ -19,9 +20,20 @@ Things that are here:
 - virt-boot -- wrapper for virt-install to create a snapshot,
   populate a cloud-init compatible config drive, and boot an instance.
 
-To create the config iso, run this:
-./create-config-drive --ssh-key /root/.ssh/id_rsa.pub --user-data ./user-data --hostname <hostname> config.iso
+## Usage
 
-The config.iso can be reused if you remove the cdrom from domain definition. 
+- To create the config iso, run this:
+  ./create-config-drive --ssh-key /root/.ssh/id_rsa.pub --user-data ./user-data --hostname <hostname> config.iso
 
+- The config.iso can be reused if you remove the cdrom from domain definition. 
 
+- default cloud-init user names
+
+```
+## Admin username:
+##    Ubuntu: ubuntu
+##    Debian: debian
+##    Fedora: fedora
+##    CentOS: centos
+##    RHEL: cloud-user
+```
