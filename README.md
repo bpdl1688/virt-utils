@@ -35,5 +35,6 @@ Things that are here:
 ##    Debian: debian
 ##    Fedora: fedora
 ##    CentOS: centos
+##    CoreOS: core
 ##    RHEL: cloud-user
 ```
